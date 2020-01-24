@@ -51,6 +51,7 @@ providers:
     password: 'nomoresecret'
     auth-url: 'http://192.168.2.174:5000/v2.0'
     project-name: 'demo'
+    boot-timeout: 1200
     max-servers: 1
     images:
       - name: dpc
