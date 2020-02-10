@@ -41,20 +41,6 @@ EOF
     rm $PRESEED
     ;;
 esac
+sudo apt-get  update
+sudo apt-get -y -qq install linux-image-extra-$(uname -r)
 
-#sudo apt-get -y  remove --purge openjdk*
-#sudo add-apt-repository -y ppa:webupd8team/java
-#sudo apt-get update
-#echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-#sudo apt-get -y install oracle-java8-installer
-#sudo apt update -y
-#sudo apt install openjdk-8-jdk openjdk-8-jre -y
-
-sudo apt-get  update -y
-sudo apt install openssh-server -y
-
-sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo apt install python3.7 -y
-sudo apt install python3.7-dev -y
-curl  https://bootstrap.pypa.io/get-pip.py | sudo python3.7
