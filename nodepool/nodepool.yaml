@@ -72,5 +72,5 @@ targets:
       url: 'http://localhost:8080/'
       user: 'zuul'
       apikey: '11f1bf54f4bf053eaa5c74c454d6f6056d'
-      credentials-id: 'b04e04b7-cdcb-460a-be14-8d03f439e803'
+      credentials-id: 'c7c7bfbe-0656-43b2-bb20-0297112928c5'
 
