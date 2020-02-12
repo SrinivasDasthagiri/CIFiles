@@ -32,7 +32,7 @@ labels:
 
 diskimages:
     - name: dpc
-elements:
+      elements:
       - ubuntu-minimal
       - vm
       - simple-init
