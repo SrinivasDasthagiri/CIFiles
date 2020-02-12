@@ -63,7 +63,7 @@ providers:
       - name: dpc
         min-ram: 8192
         diskimage: dpc
-        username: user
+        username: zuul
         private-key: '/home/nodepool/.ssh/id_rsa'
 
 targets:
@@ -73,3 +73,4 @@ targets:
       user: 'zuul'
       apikey: '11f1bf54f4bf053eaa5c74c454d6f6056d'
       credentials-id: 'c7c7bfbe-0656-43b2-bb20-0297112928c5'
+
