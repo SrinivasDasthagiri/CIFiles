@@ -62,8 +62,8 @@ providers:
 
 targets:
   - name: jenkins1
-    jenkins:
-      url: 'http://localhost:8080/'
-      user: 'jenkins'
-      apikey: '112c046c01652c9cdc0ff05be13eca27b0'
-      credentials-id: 'd76f377f-6d03-4412-959d-5f2d821e628f'
+    #    jenkins:
+    #  url: 'http://localhost:8080/'
+    #  user: 'jenkins'
+    #  apikey: '112c046c01652c9cdc0ff05be13eca27b0'
+    #  credentials-id: 'd76f377f-6d03-4412-959d-5f2d821e628f'
