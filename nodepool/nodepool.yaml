@@ -68,9 +68,9 @@ providers:
 
 targets:
   - name: jenkins1
-    zuul:
-      url: 'http://localhost:8080/'
-      user: 'zuul'
-      apikey: '11f1bf54f4bf053eaa5c74c454d6f6056d'
-      credentials-id: 'b04e04b7-cdcb-460a-be14-8d03f439e803'
+    #    zuul:
+    #  url: 'http://localhost:8080/'
+    #  user: 'zuul'
+    #  apikey: '11f1bf54f4bf053eaa5c74c454d6f6056d'
+    #  credentials-id: 'b04e04b7-cdcb-460a-be14-8d03f439e803'
 
