@@ -32,13 +32,15 @@ labels:
 
 diskimages:
     - name: dpc
-      elements:
-        - ubuntu
-        - vm
-        - openstack-repos
-        - puppet
-        - nodepool-base
-        - cache-devstack
+elements:
+      - ubuntu-minimal
+      - vm
+      - simple-init
+      - openstack-repos
+      - nodepool-base
+      - cache-devstack
+      - growroot
+      - infra-package-needs
       release: bionic
       env-vars:
         TMPDIR: /opt/dib_tmp
