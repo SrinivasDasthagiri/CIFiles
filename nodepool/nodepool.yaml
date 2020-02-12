@@ -49,21 +49,27 @@ providers:
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
     password: 'Vedams123'
-    auth-url: 'http://192.168.2.130:5000/v2.0'
+    auth-url: 'http://192.168.2.130/identity/v3/'
     project-name: 'demo'
+    project-domain-id: default
+    user-domain-id: default
     boot-timeout: 1200
     max-servers: 1
+    networks:
+      - name: private
+    security-groups:
+      - default
     images:
       - name: dpc
         min-ram: 8192
         diskimage: dpc
-        username: jenkins
+        username: user
         private-key: '/home/nodepool/.ssh/id_rsa'
 
 targets:
   - name: jenkins1
-    #    jenkins:
-    #  url: 'http://localhost:8080/'
-    #  user: 'jenkins'
-    #  apikey: '112c046c01652c9cdc0ff05be13eca27b0'
-    #  credentials-id: 'd76f377f-6d03-4412-959d-5f2d821e628f'
+    zuul:
+      url: 'http://localhost:8080/'
+      user: 'zuul'
+      apikey: '11f1bf54f4bf053eaa5c74c454d6f6056d'
+      credentials-id: 'c7c7bfbe-0656-43b2-bb20-0297112928c5'
